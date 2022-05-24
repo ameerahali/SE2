@@ -1,17 +1,97 @@
  <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Your front-end</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classification food</title>
 </head>
+<style type="text/css">
+       *{
+            margin: 0pt;
+            padding: 0pt;
+        }
 
+        header{
+            margin: 0pt;
+            margin-left: 0pt;
+            background-color:rgba(221, 70, 0, 0.897);
+        }
+
+        header h1{
+            margin-top: 5pt;
+            padding: 20pt;
+            font-size: 19pt;
+            font-family: 'Times New Roman', Times, serif;
+            color:rgb(240, 255, 240);
+            text-align: center;
+        }
+        p{
+            padding: 20pt;
+            font-size: 22pt;
+            font-family: 'Times New Roman', Times, serif;
+            color:rgb(0, 0, 0);
+        }
+
+        header img{
+            margin: 10pt;
+            float: right;
+        }
+
+        .center {
+		  margin: auto;
+		  margin-top: 90px;
+		  width: 30%;
+		  padding: 10px;
+		  text-align: center;
+		}
+
+        input{
+            padding: 10px;
+        }
+
+</style>
 <body>
-<form action="/fasttext">
-	Enter your text to be classified<br>
-	<input type="text" name="statement">
-	<input type="submit" value="Submit">
-</form> 
+    
+    <header>
+     
+        <img src="logo.png"width="100"height="100" alt="logo">
+        
+        <h1 class="name" ALIGN ="CENTER" > Food Classification System </h1>
+       
 
-</body>
+    </header>
 
-</html> 
+     
+    <form class="center" action="#">
+
+  
+        <p>Enter your text to be classified</p>
+        <textarea id='Text' name="Text" rows="10" cols="40" placeholder="Pasta, Donut, etc..."></textarea>
+        <br>
+        <input type="button" value="Submit Result" onclick="submitt()">
+        <input type="submit" value="Clear Text" onclick="clear()">
+        
+        <br>
+        <br>
+        <br>
+        
+        <label><p>Your Text Classification </p></label>
+        <br>
+        <textarea readonly id='result' name="Result" rows="10" cols="40"> </textarea>
+    </form> 
+        
+</body> 
+
+<script>
+
+        function submitt(){
+            document.getElementById('result').value =  document.getElementById('result').value +" "+ document.getElementById('Text').value;
+            document.getElementById('Text').value = '';
+        }
+        function clear(){
+            document.getElementById('Text').value = '';
+        }
+        </script>
+
+</html>
