@@ -1,18 +1,18 @@
 {
-  "name": "fasttextedmo",
+  "name": "works",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-  "scripts": {
-  "test": "echo \"No test specified\""
-}, 
+    "test": "echo \"Error: no test specified\""
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.18.1",
+    "express": "^4.17.1",
     "node-fasttext": "^1.0.0-alpha.1"
   }
 }
+
