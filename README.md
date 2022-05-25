@@ -5,7 +5,8 @@ is a website that allows user to enter a text and the website will give a Classi
 ## TRAVIS CI
 In this step, a test was done using Travis CI, and in the beginning the test was wrong, but after modifying the packg.json it became correct, see the images below
 ## Screenshots 1
-![Uploading test ci 2.png…]()
+<img width="1440" alt="test ci 2" src="https://user-images.githubusercontent.com/105976898/170229614-e49f4836-a209-4f9a-affd-0cbe5779ec3e.png">
+
 ## Screenshots 2
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 ## Interface
